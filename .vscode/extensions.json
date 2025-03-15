@@ -1,0 +1,26 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "charliermarsh.ruff",
+        "codezombiech.gitignore",
+        "DavidAnson.vscode-markdownlint",
+        "Gruntfuggly.todo-tree",
+        "HashiCorp.terraform",
+        "mosapride.zenkaku",
+        "ms-azuretools.vscode-docker",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "oderwat.indent-rainbow",
+        "PKief.material-icon-theme",
+        "redhat.vscode-yaml",
+        "saikou9901.evilinspector",
+        "sh-cho.vscode-fluent-bit",
+        "shardulm94.trailing-spaces",
+        "tamasfe.even-better-toml",
+        "usernamehw.errorlens",
+        "vincaslt.highlight-matching-tag",
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "pythonVersion": "3.13",
+    "pythonPlatform": "All",
+    "venvPath": "./",
+    "venv": ".venv",
+    "include": [
+        "src",
+        "tests",
+        "notebooks"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__pycache__"
+    ]
+}
