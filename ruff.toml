@@ -1,9 +1,9 @@
 # Ruff configuration
 
-src = [“src”, “tests”]
+src = ["src", "tests"]
+target-version = "py313"
 line-length = 88
 indent-width = 4
-target-version = “py313”
 fix = true
 show-fixes = true
 
@@ -12,54 +12,54 @@ show-fixes = true
 # claude.mdで重要視されているルール
 
 select = [
-“E”,    # pycodestyle errors
-“W”,    # pycodestyle warnings  
-“F”,    # pyflakes
-“I”,    # isort (I001が重要)
-“N”,    # pep8-naming
-“B”,    # flake8-bugbear
-“A”,    # flake8-builtins
-“C4”,   # flake8-comprehensions
-“SIM”,  # flake8-simplify
-“ERA”,  # eradicate
-“UP”,   # pyupgrade
-“S”,    # flake8-bandit
-“BLE”,  # flake8-blind-except
-“C90”,  # mccabe
-“PT”,   # flake8-pytest-style
-“RET”,  # flake8-return
-“ARG”,  # flake8-unused-arguments
-“PTH”,  # flake8-use-pathlib
-“PL”,   # pylint
-“RUF”,  # ruff-specific rules
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort (I001が重要)
+    "N",   # pep8-naming
+    "B",   # flake8-bugbear
+    "A",   # flake8-builtins
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "ERA", # eradicate
+    "UP",  # pyupgrade
+    "S",   # flake8-bandit
+    "BLE", # flake8-blind-except
+    "C90", # mccabe
+    "PT",  # flake8-pytest-style
+    "RET", # flake8-return
+    "ARG", # flake8-unused-arguments
+    "PTH", # flake8-use-pathlib
+    "PL",  # pylint
+    "RUF", # ruff-specific rules
 ]
 
 ignore = [
-“S101”,    # assert-used (テストで必要)
-“PLR0913”, # too-many-arguments
-“PLR2004”, # magic-value-comparison
+    "S101",    # assert-used (テストで必要)
+    "PLR0913", # too-many-arguments
+    "PLR2004", # magic-value-comparison
 ]
 
 # ファイル別の除外設定
 
 [lint.per-file-ignores]
-“tests/**/*” = [
-“S101”,    # assert-used
-“PLR2004”, # magic-value-comparison
-“ARG001”,  # unused-function-argument
+"tests/**/*" = [
+    "S101",    # assert-used
+    "PLR2004", # magic-value-comparison
+    "ARG001",  # unused-function-argument
 ]
-“**init**.py” = [“F401”]  # unused-import
+"**init**.py" = ["F401"] # unused-import
 
 [format]
-quote-style = “double”
-indent-style = “space”
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
 skip-magic-trailing-comma = false
-line-ending = “auto”
 docstring-code-format = true
 docstring-code-line-length = 72
 
 [lint.isort]
-known-first-party = [“python_template”]
+known-first-party = ["python_template"]
 split-on-trailing-comma = true
 force-sort-within-sections = true
 combine-as-imports = true
